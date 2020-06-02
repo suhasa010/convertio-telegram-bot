@@ -1,62 +1,30 @@
-# cloudconvert-bot
+# hello-express
 
-This Telegram bot ([@cloud_convert_bot](https://t.me/cloud_convert_bot)) mediates between the Telegram servers and those of
-cloudconvert.com to provide file conversions in Telegram. It also relies on a
-Cloud Firestore database. The code runs on GAE.
+A server that serves a webpage, its resources, and some data
 
-Please create two bots using [@BotFather](https://t.me/BotFather), one for production and one for development.
-The bot runs with webhooks but it will automatically switch to long polling mode if 'dev' is contained in the bot name.
-(E. g. the primary test bot is [@cloud_convert_dev_bot](https://t.me/cloud_convert_dev_bot).)
-This way, you can host the bot efficiently (webhooks) and still use it locally (long polling).
-(I know it would be much nicer to control this via environment variable … hopefully in the future.)
 
-However, it will always rely on `.env`. The file `.env.production` will be ignored.
-You need to exchange them to switch between the bots.
+## Your Project
 
-## Install
+On the front-end,
 
-```bash
-npm i
-```
+- Edit `views/index.html` to change the content of the webpage
+- `public/client.js` is the javacript that runs when you load the webpage
+- `public/style.css` is the styles for `views/index.html`
+- Drag in `assets`, like images or music, to add them to your project
 
-## Compile
+On the back-end,
 
-```bash
-npm run build
-```
+- your app starts at `server.js`
+- add frameworks and packages in `package.json`
+- safely store app secrets in `.env` (nobody can see this but you and people you invite)
 
-## Lint
+Click `Show` in the header to see your app live. Updates to your code will instantly deploy.
 
-```bash
-npm run lint
-```
 
-## Run in prod
+## Made by [Glitch](https://glitch.com/)
 
-```bash
-npm start
-```
+**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
 
-## Run with all logs
+Find out more [about Glitch](https://glitch.com/about).
 
-```bash
-npm run debug
-```
-
-## Deploy
-
-```bash
-gcloud app deploy
-```
-
-## Translations
-
-The bot can be translated on the website [POEditor](https://poeditor.com/join/project/rBNUMw67kZ).
-All contributions are welcome.
-Feel free to add your own language if you like.
-
-## What else is there to say
-
-There's not too much documentation, but the project is not too complicated anyway IMO.
-If you have questions regarding anything, contact [me](https://t.me/KnorpelSenf) or join the [discussion group](https://t.me/cloud_convert_bot_lounge).
-There's also a [news channel](https://t.me/cloud_convert_bot_news).
+( ᵔ ᴥ ᵔ )
